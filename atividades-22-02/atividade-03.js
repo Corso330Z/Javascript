@@ -1,2 +1,2 @@
-var idade = 16
-console.log(typeof idade)
+var idade = 16;
+console.log(typeof idade);

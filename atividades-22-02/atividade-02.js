@@ -1,3 +1,3 @@
-var saudacao = "Olá, tudo bem?"
-console.log(saudacao.toLowerCase())
-console.log(saudacao.toUpperCase())
+var saudacao = "Olá, tudo bem?";
+console.log(saudacao.toLowerCase());
+console.log(saudacao.toUpperCase());
