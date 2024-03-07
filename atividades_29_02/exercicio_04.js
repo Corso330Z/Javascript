@@ -13,4 +13,4 @@ const carro = new Veiculo("Toyota", "Corolla", 2022);
 console.log(carro.exibirDetalhes());
 
 const moto = new Veiculo("Honda", "CBR 600RR", 2021);
-console.log(moto.exibirDetalhes())
+console.log(moto.exibirDetalhes());
