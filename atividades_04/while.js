@@ -16,15 +16,21 @@ import pergunta from "readline-sync";
 // Ler as notas dos 4 bimestres de cada aluno;
 // Calcular e imprimir a média do aluno;
 // Calcular e imprimir a média da turma.
-let turma = pergunta.questionInt("Quantos alunos tem na turma? ");
+let alunosTurma = pergunta.questionInt("Quantos alunos tem na turma? ");
 let ct = 1;
-while (ct <= turma) {
-    let aluno = [
-        {nota1: pergunta.questionFloat("Digite a nota do 1ºB do : ")},
-        {nota2: pergunta.questionFloat("Digite a nota do 2ºB: ")},
-        {nota3: pergunta.questionFloat("Digite a nota do 3ºB: ")},
-        {nota4: pergunta.questionFloat("Digite a nota do 4ºB: ")},
-    ];
+let mediaAluno = 0;
+let mediaTurma = 0;
+let somaMedia = 0
+while (alunosTurma >= ct) {
+    console.log(`Digite a nota de cada bimestre do ${ct}º aluno`);
+    let b1 = pergunta.questionFloat("Digite a nota do 1ºB: ");
+    let b2 = pergunta.questionFloat("Digite a nota do 2ºB: ");
+    let b3 = pergunta.questionFloat("Digite a nota do 3ºB: ");
+    let b4 = pergunta.questionFloat("Digite a nota do 4ºB: ");
+    mediaAluno = (b1+b2+b3+b4)/4;
+    console.log(`A média anual do ${ct}º aluno foi de ${mediaAluno.toFixed(2)}`);
+    ct++;
+    somaMedia += mediaAluno
+    mediaTurma = somaMedia/alunosTurma
 }
-
-
+console.log(`A média geral da turma foi de ${mediaTurma.toFixed(2)}`)
