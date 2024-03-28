@@ -11,10 +11,7 @@
 
 // 3. Escreva um programa que itere sobre os caracteres de uma
 // string e imprima cada caractere.
-let string_array = [
-    { caracter: "Socorro"}
-]
+// let string = "Socorro"
 
-for (let string of string_array) {
-    console.log(`${string.caracter.split('')}`)
-}
+var descricao;
+console.log(descricao.length);

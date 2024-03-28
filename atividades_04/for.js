@@ -1,15 +1,17 @@
 import pr from "readline-sync";
 
 // 01. Escreva um programa que calcule e imprima os primeiros 20 números da sequência de Fibonacci.
-// let nm1 = 1;
-// let nm2 = 1;
-// let n;
+// let nmAnterior = 0;
+// let nmAtual = 1;
+// let nmProximo;
 
-// for (let nm = 1; nm <= 20; nm++) {
-//     console.log(`O ${nm}º da sequencia é: ${nm2}`);
-//     n = nm1 + nm2;
-//     nm1 = nm2;
-//     nm2 = n;
+// console.log(nmAnterior);
+// console.log(nmAtual);
+// for (let nm = 3; nm <= 20; nm++) {
+//     console.log(nmAtual);
+//     nmProximo = nmAnterior + nmAtual;
+//     nmAnterior = nmAtual;
+//     nmAtual = nmProximo;
 // }
 
 
@@ -26,6 +28,7 @@ import pr from "readline-sync";
 let nome;
 let salario;
 let vlr_imposto = 0;
+let diferenca = 0;
 
 for (let pessoas = 1; pessoas <= 10; pessoas++) {
     nome = pr.question("Digite seu nome: ");
@@ -35,19 +38,23 @@ for (let pessoas = 1; pessoas <= 10; pessoas++) {
         console.log(`${pessoas}. ${nome} - insento`);
     }
     else if (salario <= 2800) {
-        vlr_imposto = salario * 0.075;
+        diferenca = salario - 2100;
+        vlr_imposto = diferenca * 0.075;
         console.log(`${pessoas}. ${nome} - R$${vlr_imposto.toFixed(2)}`);
     }
     else if (salario <= 3750) {
-        vlr_imposto = salario * 0.15;
+        diferenca = salario - 2800
+        vlr_imposto = diferenca * 0.15;
         console.log(`${pessoas}. ${nome} - R$${vlr_imposto.toFixed(2)}`);
     }
     else if (salario <= 4660) {
-        vlr_imposto = salario * 0.225;
+        diferenca = salario - 3750
+        vlr_imposto = diferenca * 0.225;
         console.log(`${pessoas}. ${nome} - R$${vlr_imposto.toFixed(2)}`);
     }
     else if (salario >= 4660) {
-        vlr_imposto = salario * 0.275;
+        diferenca = salario - 4660
+        vlr_imposto = diferenca * 0.275;
         console.log(`${pessoas}. ${nome} - R$${vlr_imposto.toFixed(2)}`);
     }
 }
