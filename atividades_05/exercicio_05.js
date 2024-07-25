@@ -4,5 +4,5 @@
 // parâmetros, e retornar o valor com desconto aplicado.
 function desconto (valor, porcen) {
     let porcentagem = porcen / 100
-    return valor - valor * porcentagem 
+    return valor - valor * porcentagem          
 }
