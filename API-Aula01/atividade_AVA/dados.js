@@ -1,3 +1,4 @@
+// Um array de frases
 frases = [
     'A persistência é o caminho do êxito.',
     'A maior de todas as torres começa no solo.',
@@ -31,4 +32,6 @@ frases = [
     'Tenho paciência e penso: todo o mal traz consigo algum bem.',
     'O destino não é uma questão de sorte, é uma questão de escolha. Não é algo a se esperar, é algo a se conquistar.'
 ];
+
+// Exportando o array
 exports.frases = frases;
